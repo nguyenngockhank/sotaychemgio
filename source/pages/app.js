@@ -11,9 +11,7 @@ const App = React.createClass({
 	render() {
 	    return (
       		<div>
-      			<Helmet
-		            titleTemplate="%s - Sổ tay chém gió"
-		        />
+      			<Helmet titleTemplate="%s - Sổ tay chém gió"  />
       			{this.props.children}
       		</div>
 	    );
