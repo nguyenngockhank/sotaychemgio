@@ -7,8 +7,8 @@ var Scroll  = require('react-scroll');
 var Link  = Scroll.Link;
 
 function renderLinks(links){
-	const listItems = links.map((link) =>
-	  	<li><Link to={link.dest} {...APP_CONST.INNER_LINK_PROPS} >{link.text}</Link></li>
+	const listItems = links.map((link, key) =>
+	  	<li  key={key}><Link to={link.dest} {...APP_CONST.INNER_LINK_PROPS} >{link.text}</Link></li>
 	);
 	return listItems;
 }
