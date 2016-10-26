@@ -6,7 +6,8 @@ var Scroll  = require('react-scroll');
 var Element = Scroll.Element;
 
 import App from "./app";
-import Banner from '../common/banner'
+import Banner from '../apps/Banner'
+import Footer from '../apps/Footer'
 import Navbar from '../common/navbar'
 import NAVBAR_CONST from '../constants/navbar'
 
@@ -29,14 +30,15 @@ const Home = React.createClass({
 					<Breadcrumb>
 					    <Breadcrumb.Item active> <i className="fa fa-home"></i> Home </Breadcrumb.Item>
 					</Breadcrumb>
-
-			
 		         </div>
 
 		        <Element name={NAVBAR_CONST.HOME[1].dest} className="container">
 		            <CatSection items={data.cat.data} />
 		        </Element>
 
+		        <Element name={NAVBAR_CONST.HOME[3].dest}>
+		        	<Footer />
+		        </Element>
 	      	</App>
 	    );
 	}

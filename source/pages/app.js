@@ -17,6 +17,8 @@ const App = React.createClass({
 	                ]}
       				titleTemplate="%s - Sổ tay chém gió"  />
       			{this.props.children}
+
+      			
       		</div>
 	    );
 	}
